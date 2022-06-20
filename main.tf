@@ -1,3 +1,5 @@
 module "vpc" {
-  source = "git::https://github.com/rganjare/tf-module-vpc.git?ref=main"
+  source = "./vendor/modules/vpc"
+  VPC_CIDR = var.VPC_CIDR 
+
 }
